@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styleregister.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/register.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">สมัครสมาชิก</div>
+
+    <div class="content">
+      <form action="sendtocode.html" method="get">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">ชื่อ-นามสกุล</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ชื่อผู้ใช้</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">อีเมลล์(ที่ติดต่อได้จริง)</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">เบอร์โทรศัพท์</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">รหัสผ่าน</span>
+            <div class="password-input-container">
+              <input type="password" id="passwordInput" placeholder="Enter your password" required>
+              <i class="toggle-password fas fa-eye" id="togglePasswordIcon" onclick="togglePassword('passwordInput', 'togglePasswordIcon')"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="details">ยืนยันรหัสผ่าน</span>
+            <div class="password-input-container">
+              <input type="password" id="confirmPasswordInput" placeholder="Confirm your password" required>
+              <i class="toggle-password fas fa-eye" id="toggleConfirmPasswordIcon" onclick="togglePassword('confirmPasswordInput', 'toggleConfirmPasswordIcon')"></i>
+            </div>
+            <div class="match-message" id="matchMessage"></div>
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">เพศ</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">ชาย</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">หญิง</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">ไม่ระบุเพศ</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="button">
+          <a href="login.html"><input type="submit" value="Register"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

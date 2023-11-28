@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send to PIN</title>
+    <link rel="stylesheet" href="sendtocode.css">
+     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  </style>
+  <script src="js/sendtocode.js" defer></script>
+</head>
+<body>
+    <div class="containner">
+        <h2>ตรวจสอบบัญชีของคุณ</h2>
+        <p>
+            ระบบจะส่งรหัสยืนยันไปยังบัญชีของคุณ<br>
+            ตรวจสอบรหัสจากอีเมลล์ของคุณ
+        </p>
+        <div class="code-containner">
+            <input type="number" class="code" placeholder="0" min="0" max="0" max = "9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="0" max = "9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="0" max = "9" required>
+            <input type="number" class="code" placeholder="0" min="0" max="0" max = "9" required>
+            <div>
+               <a href="login.html"><button type="button" class="btn btn-primary">ยืนยัน</button></a>
+            </div>
+            <small>
+                ถ้ายังไม่ได้รับรหัสยืนยัน <strong>ส่งอีกครั้ง</strong>
+            </small>
+        </div>
+    </div>
+    <script src="js/sendtocode.js"></script>
+
+</body>
+</html>
